@@ -1,0 +1,12 @@
+{
+  "name": "network.nga.sdk",
+  "version": "0.1.0",
+  "displayName": "NGA SDK",
+  "description": "The NGA SDK for Unity: the C# API of nga-sdk (signals, consent, the ad surface's types) over the Android library and iOS framework it wraps. Add network.nga.sdk-render to show NGA's ads. Requires the External Dependency Manager for Unity (com.google.external-dependency-manager).",
+  "unity": "2022.3",
+  "author": { "name": "NGA", "url": "https://nga.io" },
+  "keywords": ["nga", "ads", "analytics", "cross-promo"],
+  "dependencies": {
+    "com.unity.modules.androidjni": "1.0.0"
+  }
+}

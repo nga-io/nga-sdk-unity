@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "host_api_min": 1,
+  "entry": "index.html",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "f925a4381cacc172d17ffa71c0766db742b0e73b53d6332d72e6c8c00d60b397",
+      "bytes": 1216,
+      "required": true
+    },
+    {
+      "path": "unit.js",
+      "sha256": "af043033a078fad6bd5a3965170f2a5eeaed4c29254221050b91061bab196802",
+      "bytes": 20281,
+      "required": true
+    },
+    {
+      "path": "unit.css",
+      "sha256": "e4d7ceaf1d119a79da7198d9e98f2e4c4f994980221750f3c6dd6acdd6c99115",
+      "bytes": 2295,
+      "required": true
+    }
+  ]
+}

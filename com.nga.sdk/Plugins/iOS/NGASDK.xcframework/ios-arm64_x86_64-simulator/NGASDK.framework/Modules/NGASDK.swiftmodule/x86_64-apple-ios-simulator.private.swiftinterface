@@ -1,0 +1,526 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NGASDK -module-alias Module___NGASDK=NGASDK -module-alias Module____StringProcessing=_StringProcessing -module-alias Module____SwiftConcurrencyShims=_SwiftConcurrencyShims -module-alias Module____Concurrency=_Concurrency -module-alias Module___StoreKit=StoreKit -module-alias Module___CoreTelephony=CoreTelephony -module-alias Module___Network=Network -module-alias Module___UIKit=UIKit -module-alias Module___os=os -module-alias Module___CFNetwork=CFNetwork -module-alias Module___MachO=MachO -module-alias Module___CryptoKit=CryptoKit -module-alias Module___Security=Security -module-alias Module___zlib=zlib -module-alias Module___AdSupport=AdSupport -module-alias Module___AppTrackingTransparency=AppTrackingTransparency -module-alias Module___SQLite3=SQLite3 -module-alias Module___CoreMotion=CoreMotion
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Module___AdSupport
+import Module___AppTrackingTransparency
+import Module___CFNetwork
+import Module___CoreMotion
+import Module___CoreTelephony
+import Module___CryptoKit
+import Foundation
+import Module___MachO
+import Module___Network
+import Module___SQLite3
+import Module___Security
+import Module___StoreKit
+import Swift
+import Module___UIKit
+import Module____Concurrency
+import Module____StringProcessing
+import Module____SwiftConcurrencyShims
+import Module___os
+import Module___zlib
+@_spi(NGAInternal) public protocol NGACancellable : AnyObject {
+  @_spi(NGAInternal) func cancel()
+}
+@_spi(NGAInternal) public protocol NGAExecutor : AnyObject {
+  @_spi(NGAInternal) func execute(_ task: @escaping () -> Swift.Void)
+  @_spi(NGAInternal) func executeAfter(_ delayMs: Swift.Int64, _ task: @escaping () -> Swift.Void) -> any Module___NGASDK.NGACancellable
+  @_spi(NGAInternal) var isCurrent: Swift.Bool { get }
+}
+@_spi(NGAInternal) public enum NGAIoLane : Swift.Int, Swift.CaseIterable {
+  @_spi(NGAInternal) case ad
+  @_spi(NGAInternal) case platformRead
+  @_spi(NGAInternal) case file
+  @_spi(NGAInternal) case download
+  @_spi(NGAInternal) public init?(rawValue: Swift.Int)
+  @_spi(NGAInternal) public typealias AllCases = [Module___NGASDK.NGAIoLane]
+  @_spi(NGAInternal) public typealias RawValue = Swift.Int
+  @_spi(NGAInternal) nonisolated public static var allCases: [Module___NGASDK.NGAIoLane] {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var rawValue: Swift.Int {
+    @_spi(NGAInternal) get
+  }
+}
+@_spi(NGAInternal) public protocol NGAIoExecutor : AnyObject {
+  @_spi(NGAInternal) func execute(_ lane: Module___NGASDK.NGAIoLane, _ task: @escaping () -> Swift.Void)
+}
+@_spi(NGAInternal) public struct NGAHttpResult {
+  @_spi(NGAInternal) public let status: Swift.Int
+  @_spi(NGAInternal) public let headers: [Swift.String : Swift.String]
+  @_spi(NGAInternal) public let body: Swift.String?
+  @_spi(NGAInternal) public let failure: Swift.String?
+  @_spi(NGAInternal) public let servedSpki: [Swift.String]?
+  @_spi(NGAInternal) public init(status: Swift.Int, headers: [Swift.String : Swift.String], body: Swift.String?, failure: Swift.String?, servedSpki: [Swift.String]?)
+}
+@_spi(NGAInternal) indirect public enum NGAJSON : Swift.Equatable {
+  @_spi(NGAInternal) case null
+  @_spi(NGAInternal) case bool(Swift.Bool)
+  @_spi(NGAInternal) case int(Swift.Int64)
+  @_spi(NGAInternal) case double(Swift.Double)
+  @_spi(NGAInternal) case string(Swift.String)
+  @_spi(NGAInternal) case array([Module___NGASDK.NGAJSON])
+  @_spi(NGAInternal) case object([Module___NGASDK.NGAJSON.Member])
+  @_spi(NGAInternal) case raw(Swift.String)
+  @_spi(NGAInternal) public struct Member : Swift.Equatable {
+    @_spi(NGAInternal) public let key: Swift.String
+    @_spi(NGAInternal) public let value: Module___NGASDK.NGAJSON
+    @_spi(NGAInternal) public init(key: Swift.String, value: Module___NGASDK.NGAJSON)
+    @_spi(NGAInternal) public static func == (a: Module___NGASDK.NGAJSON.Member, b: Module___NGASDK.NGAJSON.Member) -> Swift.Bool
+  }
+  @_spi(NGAInternal) public init(_ value: Swift.String?)
+  @_spi(NGAInternal) public init(_ value: Swift.Bool?)
+  @_spi(NGAInternal) public init(_ value: Swift.Int?)
+  @_spi(NGAInternal) public init(_ value: Swift.Int64?)
+  @_spi(NGAInternal) public init(_ value: Swift.Double?)
+  @_spi(NGAInternal) public init(_ values: [Swift.String]?)
+  @_spi(NGAInternal) public static func object(_ members: Swift.KeyValuePairs<Swift.String, Module___NGASDK.NGAJSON>) -> Module___NGASDK.NGAJSON
+  @_spi(NGAInternal) public subscript(key: Swift.String) -> Module___NGASDK.NGAJSON? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var isNull: Swift.Bool {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var members: [Module___NGASDK.NGAJSON.Member]? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var items: [Module___NGASDK.NGAJSON]? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var stringValue: Swift.String? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var int64Value: Swift.Int64? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var boolValue: Swift.Bool? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public var doubleValue: Swift.Double? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public func setting(_ key: Swift.String, _ value: Module___NGASDK.NGAJSON) -> Module___NGASDK.NGAJSON
+  @_spi(NGAInternal) public func encoded() -> Swift.String
+  @_spi(NGAInternal) public static func parse(_ text: Swift.String) -> Module___NGASDK.NGAJSON?
+  @_spi(NGAInternal) public static func parseObject(_ text: Swift.String) -> Module___NGASDK.NGAJSON?
+  @_spi(NGAInternal) public static func == (a: Module___NGASDK.NGAJSON, b: Module___NGASDK.NGAJSON) -> Swift.Bool
+}
+@_spi(NGAInternal) public enum NGAVerification {
+  @_spi(NGAInternal) case ok
+  @_spi(NGAInternal) case keyUnknown
+  @_spi(NGAInternal) case badSignature
+  @_spi(NGAInternal) public static func == (a: Module___NGASDK.NGAVerification, b: Module___NGASDK.NGAVerification) -> Swift.Bool
+  @_spi(NGAInternal) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(NGAInternal) public var hashValue: Swift.Int {
+    @_spi(NGAInternal) get
+  }
+}
+@objc public protocol NGAAd {
+  @objc var placementId: Swift.String { get }
+  @objc var opportunityId: Swift.String { get }
+  @objc var expiresAtMillis: Swift.Int64 { get }
+  @objc var state: Module___NGASDK.NGAAdState { get }
+  @objc var isReady: Swift.Bool { get }
+  @objc(showFromViewController:listener:) func show(from viewController: Module___UIKit.UIViewController, listener: any Module___NGASDK.NGAAdShowListener)
+  @objc func close()
+}
+@objc public enum NGAAdState : Swift.Int {
+  case failed = 0
+  case ready = 1
+  case showing = 2
+  case consumed = 3
+  case expired = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol NGAAdLoadCallback {
+  @objc func onLoaded(_ ad: any Module___NGASDK.NGAAd)
+  @objc(onFailedWithPlacementId:error:) func onFailed(placementId: Swift.String, error: Module___NGASDK.NGAError)
+  @objc optional func onExpired(_ ad: any Module___NGASDK.NGAAd)
+}
+@objc public protocol NGAAdShowListener {
+  @objc func onShowStarted(_ ad: any Module___NGASDK.NGAAd)
+  @objc optional func onClicked(_ ad: any Module___NGASDK.NGAAd)
+  @objc(onRewardResult:result:) optional func onRewardResult(_ ad: any Module___NGASDK.NGAAd, result: Module___NGASDK.NGARewardResult)
+  @objc(onCompleted:completion:) func onCompleted(_ ad: any Module___NGASDK.NGAAd, completion: Module___NGASDK.NGAShowCompletion)
+  @objc func onClosed(_ ad: any Module___NGASDK.NGAAd)
+  @objc(onShowFailed:error:) func onShowFailed(_ ad: any Module___NGASDK.NGAAd, error: Module___NGASDK.NGAError)
+}
+@objc public enum NGAShowCompletion : Swift.Int {
+  case skipped = 0
+  case completed = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NGARewardDenial : Swift.Int {
+  case none = 0
+  case skipped = 1
+  case rejected = 2
+  case interrupted = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(NGARewardResult) final public class NGARewardResult : ObjectiveC.NSObject {
+  @objc final public let granted: Swift.Bool
+  @objc final public let denial: Module___NGASDK.NGARewardDenial
+  @_spi(NGAInternal) public init(granted: Swift.Bool, denial: Module___NGASDK.NGARewardDenial)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(NGAImpression) final public class NGAImpression : ObjectiveC.NSObject {
+  @objc final public let placementId: Swift.String
+  @objc final public let opportunityId: Swift.String
+  @objc final public let format: Module___NGASDK.NGAAdFormat
+  @objc final public let revenueMicros: Swift.Int64
+  @objc final public let currency: Swift.String
+  @objc final public let precision: Module___NGASDK.NGARevenuePrecision
+  @objc final public let campaignId: Swift.String?
+  @objc final public let creativeId: Swift.String?
+  @objc final public let advertiserBundle: Swift.String?
+  @objc final public let advertiserDomain: Swift.String?
+  @_spi(NGAInternal) public init(placementId: Swift.String, opportunityId: Swift.String, format: Module___NGASDK.NGAAdFormat, revenueMicros: Swift.Int64, currency: Swift.String, precision: Module___NGASDK.NGARevenuePrecision, campaignId: Swift.String?, creativeId: Swift.String?, advertiserBundle: Swift.String?, advertiserDomain: Swift.String?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(NGAAdRevenue) final public class NGAAdRevenue : ObjectiveC.NSObject {
+  @objc(NGAAdRevenueBuilder) final public class Builder : ObjectiveC.NSObject {
+    public init(mediation: Module___NGASDK.NGAAdRevenueMediation, revenueMicros: Swift.Int64, currency: Swift.String, precision: Module___NGASDK.NGARevenuePrecision)
+    @available(swift, obsoleted: 1.0, message: "Objective-C entry point; call init(mediation:revenueMicros:currency:precision:)")
+    @objc(initWithMediation:revenueMicros:currency:precision:) public init(objcMediation mediation: Module___NGASDK.NGAAdRevenueMediation, revenueMicros: Swift.Int64, currency: Swift.String?, precision: Module___NGASDK.NGARevenuePrecision)
+    @discardableResult
+    @objc final public func network(_ name: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func adUnitId(_ id: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func adFormat(_ format: Module___NGASDK.NGAAdFormat) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func placement(_ name: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func networkPlacement(_ id: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func creativeId(_ id: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func advertiserDomain(_ adomain: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @discardableResult
+    @objc final public func impressionId(_ id: Swift.String) -> Module___NGASDK.NGAAdRevenue.Builder
+    @objc final public func build() -> Module___NGASDK.NGAAdRevenue
+    @objc deinit
+  }
+  @objc deinit
+}
+@objc public enum NGAAdRevenueMediation : Swift.Int {
+  case none = 0
+  case admob = 1
+  case max = 2
+  case levelplay = 3
+  case other = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NGARevenuePrecision : Swift.Int {
+  case undefined = 0
+  case exact = 1
+  case estimated = 2
+  case publisherDefined = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NGAAdFormat : Swift.Int {
+  case unknown = 0
+  case banner = 1
+  case mrec = 2
+  case interstitial = 3
+  case rewarded = 4
+  case rewardedInterstitial = 5
+  case native = 6
+  case appOpen = 7
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc(NGAConfig) final public class NGAConfig : ObjectiveC.NSObject {
+  @objc(NGAConfigBuilder) final public class Builder : ObjectiveC.NSObject {
+    public init(appKey: Swift.String, consent: Module___NGASDK.NGAConsent)
+    @available(swift, obsoleted: 1.0, message: "Objective-C entry point; call init(appKey:consent:)")
+    @objc(initWithAppKey:consent:) public init(objcAppKey appKey: Swift.String?, consent: Module___NGASDK.NGAConsent?)
+    @discardableResult
+    @objc final public func testMode(_ enabled: Swift.Bool) -> Module___NGASDK.NGAConfig.Builder
+    @objc final public func build() -> Module___NGASDK.NGAConfig
+    @objc deinit
+  }
+  @objc deinit
+}
+@objc public enum NGAConsentState : Swift.Int {
+  case unknown = 0
+  case granted = 1
+  case denied = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NGAAgeState : Swift.Int {
+  case unknown = 0
+  case adult = 1
+  case child = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(NGAConsent) final public class NGAConsent : ObjectiveC.NSObject {
+  @objc final public let analytics: Module___NGASDK.NGAConsentState
+  @objc final public let adsPersonalization: Module___NGASDK.NGAConsentState
+  @objc public init(analytics: Module___NGASDK.NGAConsentState, adsPersonalization: Module___NGASDK.NGAConsentState)
+  @objc public static func unknown() -> Module___NGASDK.NGAConsent
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override final public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc(NGAError) final public class NGAError : ObjectiveC.NSObject {
+  @objc final public let code: Module___NGASDK.NGAErrorCode
+  @objc final public let detail: Swift.String
+  @objc final public let message: Swift.String
+  @objc final public let retryable: Swift.Bool
+  final public let retryAfterMillis: Swift.Int64?
+  @objc final public let cause: Foundation.NSError?
+  @_spi(NGAInternal) public init(code: Module___NGASDK.NGAErrorCode, detail: Swift.String, message: Swift.String, retryable: Swift.Bool, retryAfterMillis: Swift.Int64? = nil, cause: Foundation.NSError? = nil)
+  @available(swift, obsoleted: 1.0, message: "Objective-C accessor; read retryAfterMillis")
+  @objc(retryAfterMillis) final public var objcRetryAfterMillis: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum NGAErrorCode : Swift.Int {
+  case notInitialized = 100
+  case invalidConfig = 101
+  case invalidArgument = 102
+  case disabled = 103
+  case renderNotAvailable = 104
+  case network = 200
+  case timeout = 201
+  case serverRejected = 202
+  case `internal` = 299
+  case invalidPlacement = 300
+  case noFill = 301
+  case expired = 302
+  case adConsumed = 303
+  case notReady = 304
+  case alreadyShowing = 305
+  case activityNotResumed = 306
+  case renderFailed = 307
+  case invalidShowTarget = 308
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Module___NGASDK.NGAErrorCode {
+  public var name: Swift.String {
+    get
+  }
+}
+@_spi(NGAInternal) public protocol NGADebugTap : AnyObject {
+  @_spi(NGAInternal) func onExchange(path: Swift.String, request: Swift.String?, status: Swift.Int, response: Swift.String?)
+}
+@_spi(NGAInternal) public enum NGAInternal {
+  @_spi(NGAInternal) public static func overrideEndpoint(_ url: Swift.String, devPublicKey: Swift.String)
+  @_spi(NGAInternal) public static func setDebugTap(_ tap: (any Module___NGASDK.NGADebugTap)?)
+  @_spi(NGAInternal) public static func flushEvents()
+  @_spi(NGAInternal) public static func snapshotSignals(_ callback: @escaping (Swift.String) -> Swift.Void)
+  @_spi(NGAInternal) public static func setTestLimits(_ json: Swift.String?)
+  @_spi(NGAInternal) public static func resetInstall()
+}
+@objc public protocol NGAListener {
+  @objc func onInitialized(_ result: Module___NGASDK.NGAInitResult)
+  @objc optional func onError(_ error: Module___NGASDK.NGAError)
+  @objc(onAdClosedAfterRestartWithPlacementId:opportunityId:rewardGranted:) optional func onAdClosedAfterRestart(placementId: Swift.String, opportunityId: Swift.String, rewardGranted: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers @objc(NGAInitResult) final public class NGAInitResult : ObjectiveC.NSObject {
+  @objc final public let success: Swift.Bool
+  @objc final public let error: Module___NGASDK.NGAError?
+  @objc final public let fromCache: Swift.Bool
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum NGALogLevel : Swift.Int {
+  case none = 0
+  case error = 1
+  case warn = 2
+  case info = 3
+  case debug = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_spi(NGAInternal) public protocol NGARenderModule : AnyObject {
+  @_spi(NGAInternal) var sdkVersion: Swift.String { get }
+  @_spi(NGAInternal) var hostApi: Swift.Int { get }
+  @_spi(NGAInternal) func start(host: any Module___NGASDK.NGAHost, sessionId: Swift.String?, inForeground: Swift.Bool)
+  @_spi(NGAInternal) func loadAd(_ placementId: Swift.String, callback: any Module___NGASDK.NGAAdLoadCallback)
+  @_spi(NGAInternal) func setImpressionListener(_ listener: ((Module___NGASDK.NGAImpression) -> Swift.Void)?)
+  @_spi(NGAInternal) func setMuted(_ muted: Swift.Bool)
+  @_spi(NGAInternal) func onSessionStart(_ sessionId: Swift.String)
+  @_spi(NGAInternal) func onChildTreatment()
+  @_spi(NGAInternal) func onForeground(_ inForeground: Swift.Bool)
+}
+@_spi(NGAInternal) public protocol NGAHost : AnyObject {
+  @_spi(NGAInternal) func session() -> Module___NGASDK.NGAHostSession
+  @_spi(NGAInternal) func consent() -> Module___NGASDK.NGAJSON
+  @_spi(NGAInternal) func requestContext(_ placementId: Swift.String) -> Module___NGASDK.NGAHostRequestContext
+  @_spi(NGAInternal) func config() -> Module___NGASDK.NGAHostConfig
+  @_spi(NGAInternal) func send(_ method: Swift.String, _ path: Swift.String, _ body: Swift.String, _ onResponse: @escaping (Module___NGASDK.NGAHttpResult) -> Swift.Void)
+  @_spi(NGAInternal) func worker() -> any Module___NGASDK.NGAExecutor
+  @_spi(NGAInternal) func io() -> any Module___NGASDK.NGAIoExecutor
+  @_spi(NGAInternal) func clock() -> any Module___NGASDK.NGAClock
+  @_spi(NGAInternal) func storageDirectory() -> Foundation.URL?
+  @_spi(NGAInternal) func cacheDirectory() -> Foundation.URL?
+  @_spi(NGAInternal) func isDebuggable() -> Swift.Bool
+  @_spi(NGAInternal) func log(_ level: Module___NGASDK.NGALogLevel, _ message: Swift.String)
+  @_spi(NGAInternal) func enqueue(_ type: Swift.String, _ name: Swift.String, _ payload: Module___NGASDK.NGAJSON)
+  @_spi(NGAInternal) func verifySignature(_ signed: Swift.String, _ signatureBase64: Swift.String, _ keyId: Swift.String) -> Module___NGASDK.NGAVerification
+  @_spi(NGAInternal) func adCloseQueued(_ opportunityId: Swift.String) -> Swift.Bool
+  @_spi(NGAInternal) func adClosedAfterRestart(placementId: Swift.String, opportunityId: Swift.String, rewardGranted: Swift.Bool)
+  @_spi(NGAInternal) func post(_ callback: @escaping () -> Swift.Void)
+  @_spi(NGAInternal) func recordFailure(_ site: Swift.String, _ what: Swift.String)
+}
+@_spi(NGAInternal) public struct NGAHostSession {
+  @_spi(NGAInternal) public let sessionId: Swift.String?
+  @_spi(NGAInternal) public let appKey: Swift.String
+  @_spi(NGAInternal) public let sdkVersion: Swift.String
+  @_spi(NGAInternal) public let testMode: Swift.Bool
+  @_spi(NGAInternal) public init(sessionId: Swift.String?, appKey: Swift.String, sdkVersion: Swift.String, testMode: Swift.Bool)
+}
+@_spi(NGAInternal) public struct NGAHostRequestContext {
+  @_spi(NGAInternal) public let installId: Swift.String
+  @_spi(NGAInternal) public let staticHash: Swift.String?
+  @_spi(NGAInternal) public let cohort: Module___NGASDK.NGAJSON
+  @_spi(NGAInternal) public init(installId: Swift.String, staticHash: Swift.String?, cohort: Module___NGASDK.NGAJSON)
+}
+@_spi(NGAInternal) public struct NGAHostConfig {
+  @_spi(NGAInternal) public let placements: [Module___NGASDK.NGAJSON]
+  @_spi(NGAInternal) public let fraudIntegrity: Swift.Bool
+  @_spi(NGAInternal) public let backoffMs: [Swift.Int64]
+  @_spi(NGAInternal) public let hostStyle: Module___NGASDK.NGAJSON?
+  @_spi(NGAInternal) public let refreshPending: Swift.Bool
+  @_spi(NGAInternal) public init(placements: [Module___NGASDK.NGAJSON], fraudIntegrity: Swift.Bool, backoffMs: [Swift.Int64], hostStyle: Module___NGASDK.NGAJSON?, refreshPending: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers @objc(NGAResult) final public class NGAResult : ObjectiveC.NSObject {
+  @objc final public let accepted: Swift.Bool
+  @objc final public let error: Module___NGASDK.NGAError?
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(NGASDK) final public class NGASDK : ObjectiveC.NSObject {
+  public static func initialize(config: Module___NGASDK.NGAConfig, listener: (any Module___NGASDK.NGAListener)?)
+  @objc public static func getSdkVersion() -> Swift.String
+  @objc public static func setLogLevel(_ level: Module___NGASDK.NGALogLevel)
+  public static func setConsent(_ consent: Module___NGASDK.NGAConsent)
+  @objc public static func getConsent() -> Module___NGASDK.NGAConsent
+  @objc public static func setAge(_ age: Module___NGASDK.NGAAgeState)
+  @objc public static func getAge() -> Module___NGASDK.NGAAgeState
+  @discardableResult
+  @objc public static func setCustomerUserId(_ id: Swift.String?) -> Module___NGASDK.NGAResult
+  @discardableResult
+  public static func logAdRevenue(_ adRevenue: Module___NGASDK.NGAAdRevenue) -> Module___NGASDK.NGAResult
+  @discardableResult
+  public static func logPurchase(_ result: Module___StoreKit.VerificationResult<Module___StoreKit.Transaction>) -> Module___NGASDK.NGAResult
+  public static func loadAd(_ placementId: Swift.String, callback: any Module___NGASDK.NGAAdLoadCallback)
+  @objc public static var impressionListener: ((Module___NGASDK.NGAImpression) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc public static func setMuted(_ muted: Swift.Bool)
+  @objc public static func isMuted() -> Swift.Bool
+  @objc deinit
+}
+extension Module___NGASDK.NGASDK {
+  @available(swift, obsoleted: 1.0, message: "Objective-C entry point; call initialize(config:listener:)")
+  @objc(initializeWithConfig:listener:) public static func objcInitialize(config: Module___NGASDK.NGAConfig?, listener: (any Module___NGASDK.NGAListener)?)
+  @available(swift, obsoleted: 1.0, message: "Objective-C entry point; call setConsent(_:)")
+  @objc(setConsent:) public static func objcSetConsent(_ consent: Module___NGASDK.NGAConsent?)
+  @available(swift, obsoleted: 1.0, message: "Objective-C entry point; call logAdRevenue(_:)")
+  @objc(logAdRevenue:) public static func objcLogAdRevenue(_ adRevenue: Module___NGASDK.NGAAdRevenue?) -> Module___NGASDK.NGAResult
+  @available(swift, obsoleted: 1.0, message: "Objective-C entry point; call loadAd(_:callback:)")
+  @objc(loadAd:callback:) public static func objcLoadAd(_ placementId: Swift.String?, callback: (any Module___NGASDK.NGAAdLoadCallback)?)
+}
+@_spi(NGAInternal) public enum NGAUnityBridge {
+  @_spi(NGAInternal) @discardableResult
+  public static func logPurchase(jws: Swift.String?) -> Module___NGASDK.NGAResult
+}
+@_spi(NGAInternal) public protocol NGAClock {
+  @_spi(NGAInternal) func nowMs() -> Swift.Int64
+  @_spi(NGAInternal) func elapsedMs() -> Swift.Int64
+}
+@_spi(NGAInternal) extension Module___NGASDK.NGAIoLane : Swift.Equatable {}
+@_spi(NGAInternal) extension Module___NGASDK.NGAIoLane : Swift.Hashable {}
+@_spi(NGAInternal) extension Module___NGASDK.NGAIoLane : Swift.RawRepresentable {}
+@_spi(NGAInternal) extension Module___NGASDK.NGAVerification : Swift.Equatable {}
+@_spi(NGAInternal) extension Module___NGASDK.NGAVerification : Swift.Hashable {}
+extension Module___NGASDK.NGAAdState : Swift.Equatable {}
+extension Module___NGASDK.NGAAdState : Swift.Hashable {}
+extension Module___NGASDK.NGAAdState : Swift.RawRepresentable {}
+extension Module___NGASDK.NGAShowCompletion : Swift.Equatable {}
+extension Module___NGASDK.NGAShowCompletion : Swift.Hashable {}
+extension Module___NGASDK.NGAShowCompletion : Swift.RawRepresentable {}
+extension Module___NGASDK.NGARewardDenial : Swift.Equatable {}
+extension Module___NGASDK.NGARewardDenial : Swift.Hashable {}
+extension Module___NGASDK.NGARewardDenial : Swift.RawRepresentable {}
+extension Module___NGASDK.NGAAdRevenueMediation : Swift.Equatable {}
+extension Module___NGASDK.NGAAdRevenueMediation : Swift.Hashable {}
+extension Module___NGASDK.NGAAdRevenueMediation : Swift.RawRepresentable {}
+extension Module___NGASDK.NGARevenuePrecision : Swift.Equatable {}
+extension Module___NGASDK.NGARevenuePrecision : Swift.Hashable {}
+extension Module___NGASDK.NGARevenuePrecision : Swift.RawRepresentable {}
+extension Module___NGASDK.NGAAdFormat : Swift.Equatable {}
+extension Module___NGASDK.NGAAdFormat : Swift.Hashable {}
+extension Module___NGASDK.NGAAdFormat : Swift.RawRepresentable {}
+extension Module___NGASDK.NGAConsentState : Swift.Equatable {}
+extension Module___NGASDK.NGAConsentState : Swift.Hashable {}
+extension Module___NGASDK.NGAConsentState : Swift.RawRepresentable {}
+extension Module___NGASDK.NGAAgeState : Swift.Equatable {}
+extension Module___NGASDK.NGAAgeState : Swift.Hashable {}
+extension Module___NGASDK.NGAAgeState : Swift.RawRepresentable {}
+extension Module___NGASDK.NGAErrorCode : Swift.Equatable {}
+extension Module___NGASDK.NGAErrorCode : Swift.Hashable {}
+extension Module___NGASDK.NGAErrorCode : Swift.RawRepresentable {}
+extension Module___NGASDK.NGALogLevel : Swift.Equatable {}
+extension Module___NGASDK.NGALogLevel : Swift.Hashable {}
+extension Module___NGASDK.NGALogLevel : Swift.RawRepresentable {}

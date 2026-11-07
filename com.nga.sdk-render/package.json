@@ -1,0 +1,12 @@
+{
+  "name": "network.nga.sdk-render",
+  "version": "0.1.0",
+  "displayName": "NGA SDK Render",
+  "description": "NGA's ads for Unity: the nga-sdk-render Android library and iOS framework, which network.nga.sdk discovers at Initialize; interstitial, rewarded and the native cross-promo banner. Requires network.nga.sdk at this same version.",
+  "unity": "2022.3",
+  "author": { "name": "NGA", "url": "https://nga.io" },
+  "keywords": ["nga", "ads", "interstitial", "rewarded", "cross-promo"],
+  "dependencies": {
+    "network.nga.sdk": "0.1.0"
+  }
+}

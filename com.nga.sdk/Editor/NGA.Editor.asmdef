@@ -1,0 +1,14 @@
+{
+    "name": "NGA.Editor",
+    "rootNamespace": "NGA.Editor",
+    "references": ["NGA"],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

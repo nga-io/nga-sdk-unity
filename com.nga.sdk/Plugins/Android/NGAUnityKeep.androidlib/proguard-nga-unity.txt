@@ -1,0 +1,9 @@
+# The NGA SDK's public API, as the Unity package's C# calls it through JNI: the classes,
+# their public members and nested builders, the callback interfaces AndroidJavaProxy implements by method name, and the
+# enums whose constants the bridge reads. Nothing under network.nga.sdk.internal: the bridge never names it.
+-keep public class network.nga.sdk.* { public *; }
+-keep public interface network.nga.sdk.* { *; }
+-keepclassmembers enum network.nga.sdk.* {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}

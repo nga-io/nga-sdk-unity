@@ -1,0 +1,5 @@
+<!-- IL2CPP managed stripping, at any level, keeps the NGA assembly,
+     whose AndroidJavaProxy callback classes and [MonoPInvokeCallback] trampoline the native side reaches only from outside IL2CPP's view. -->
+<linker>
+  <assembly fullname="NGA" preserve="all" />
+</linker>

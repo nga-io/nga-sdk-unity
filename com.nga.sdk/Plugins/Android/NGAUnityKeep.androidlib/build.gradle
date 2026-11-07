@@ -1,0 +1,23 @@
+// The C# bridge's keep rules: Unity reaches nga-sdk's public API through JNI by name, which R8 cannot see, so a release
+// build with minify would remove it. A library module of Unity's Gradle project, carrying the rules as consumer rules.
+apply plugin: 'com.android.library'
+
+// The platform and Build-Tools Unity's own unityLibrary module compiles with: they are in the SDK Unity builds
+// with, whichever editor and Android SDK the studio has. This module is unityLibrary's child, which Gradle evaluates first.
+def unity = project.parent?.extensions?.findByName('android')
+if (unity == null) throw new GradleException("NGAUnityKeep.androidlib must be a module of Unity's unityLibrary project")
+
+android {
+    namespace 'network.nga.sdk.unity'
+    compileSdkVersion unity.compileSdkVersion
+    buildToolsVersion unity.buildToolsVersion
+    defaultConfig {
+        minSdkVersion 23
+        consumerProguardFiles 'proguard-nga-unity.txt'
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}

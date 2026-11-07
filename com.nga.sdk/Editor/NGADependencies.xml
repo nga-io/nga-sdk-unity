@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The runtime dependencies of the AAR this package carries, for the External Dependency Manager for Unity (EDM4U),
+     which fetches them into the Gradle build: Unity's build does not read an AAR's POM (the same three for nga-sdk and
+     nga-sdk-render). -->
+<dependencies>
+  <androidPackages>
+    <repositories>
+      <repository>https://maven.google.com</repository>
+      <repository>https://repo.maven.apache.org/maven2</repository>
+    </repositories>
+    <androidPackage spec="org.jetbrains.kotlin:kotlin-stdlib:1.9.24" />
+    <androidPackage spec="com.android.installreferrer:installreferrer:2.2" />
+    <androidPackage spec="com.google.android.gms:play-services-appset:16.1.0" />
+  </androidPackages>
+</dependencies>
