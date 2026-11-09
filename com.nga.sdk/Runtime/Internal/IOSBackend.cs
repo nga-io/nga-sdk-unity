@@ -1,5 +1,6 @@
 // The iOS player's backend: NGA's iOS framework through Plugins/iOS/NGABridge.mm. Native callbacks arrive on
-// the main thread, Unity's game thread, at one static [MonoPInvokeCallback] trampoline, which copies the text into plain C#
+// the main thread, Unity's game thread, at static [MonoPInvokeCallback] trampolines (one for the callbacks, one for the banner
+// yield), which copy the text into plain C#
 // values and only enqueues (Dispatcher), so the studio's code never runs on the native-to-managed frame, even there.
 // Values cross as text: fields joined by \x1f, a nil field \x1e. Compiled on every platform so the Editor
 // type-checks it; created only in an iOS player (Backends).
@@ -48,6 +49,11 @@ namespace NGA.Internal
         [DllImport(Lib)] static extern void nga_ad_close(long handle);
         [DllImport(Lib)] internal static extern void nga_ad_release(long handle);
 
+        delegate void YieldCallback(long generation, long token, int kind);
+
+        [DllImport(Lib)] static extern void nga_set_banner_yield(long generation, YieldCallback callback);
+        [DllImport(Lib)] static extern void nga_banner_yield_hide_ran(long token, int threw);
+
         // The bridge's kinds (NGABridge.mm).
         const int Initialized = 0, Error = 1, ClosedAfterRestart = 2, Loaded = 3, LoadFailed = 4, Expired = 5, ShowStarted = 6, Clicked = 7,
             Reward = 8, Completed = 9, Closed = 10, ShowFailed = 11, Impression = 12, Release = 13;
@@ -56,6 +62,12 @@ namespace NGA.Internal
         const string Nil = "\x1e";
 
         static readonly Callback Trampoline = Receive; // held, so the pointer native keeps stays valid
+        static readonly YieldCallback YieldTrampoline = ReceiveYield;
+
+        // Each pair registered, by generation: native asks the pair a show's hide went to for its restore.
+        static readonly Dictionary<long, BannerYield> Yields = new Dictionary<long, BannerYield>();
+        static long yieldGeneration;
+        const long KeptYields = 4;
         static Action<NGAImpression> impressionListener;
 
         internal IOSBackend() => nga_bridge_set_callback(Trampoline);
@@ -140,9 +152,44 @@ namespace NGA.Internal
 
         public void Close(NGAAd ad) => nga_ad_close(((IOSHandle)ad.Native).Id);
 
+        public void SetBannerYield(BannerYield pair)
+        {
+            if (pair == null)
+            {
+                lock (Yields) nga_set_banner_yield(0, YieldTrampoline);
+                return;
+            }
+            lock (Yields)
+            {
+                var generation = ++yieldGeneration;
+                Yields[generation] = pair;
+                // A show in flight keeps its pair until its restore: the few registered just before stay, older ones go
+                Yields.Remove(generation - KeptYields);
+                nga_set_banner_yield(generation, YieldTrampoline);
+            }
+        }
+
+        /// <summary>The yield's trampoline: enqueue, return. Kind 0 is hide, 1 restore.</summary>
+        [MonoPInvokeCallback(typeof(YieldCallback))]
+        static void ReceiveYield(long generation, long token, int kind)
+        {
+            try
+            {
+                BannerYield pair;
+                lock (Yields) Yields.TryGetValue(generation, out pair);
+                if (pair == null) return;
+                if (kind == 0) pair.RunHide(threw => nga_banner_yield_hide_ran(token, threw ? 1 : 0));
+                else pair.RunRestore();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("[NGA] a native banner yield call (" + kind + "): " + e);
+            }
+        }
+
         static (int analytics, int ads) Consent(NGAConsent c) => Validation.Named(c) ? ((int)c.Analytics, (int)c.AdsPersonalization) : (-1, -1);
 
-        /// <summary>The one trampoline: copy, enqueue, return. It never throws back into native.</summary>
+        /// <summary>The callbacks' trampoline: copy, enqueue, return. It never throws back into native.</summary>
         [MonoPInvokeCallback(typeof(Callback))]
         static void Receive(long token, int kind, IntPtr text)
         {

@@ -307,6 +307,7 @@ extension Module___NGASDK.NGAErrorCode {
   }
   @objc public static func setMuted(_ muted: Swift.Bool)
   @objc public static func isMuted() -> Swift.Bool
+  @objc(setBannerYieldWithHide:restore:) public static func setBannerYield(hide: (() -> Swift.Void)?, restore: (() -> Swift.Void)?)
   @objc deinit
 }
 extension Module___NGASDK.NGASDK {

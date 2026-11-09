@@ -112,6 +112,14 @@ namespace NGA.Internal
             lock (gate) return muted;
         }
 
+        BannerYield bannerYield;
+
+        /// <summary>Kept, like every setter's value; no banner shows here, so neither half is ever called.</summary>
+        public void SetBannerYield(BannerYield pair)
+        {
+            lock (gate) bannerYield = pair;
+        }
+
         // No ad exists outside a player; these answer as for a failed handle.
         public NGAAdState State(NGAAd ad) => NGAAdState.Failed;
         public bool IsReady(NGAAd ad) => false;

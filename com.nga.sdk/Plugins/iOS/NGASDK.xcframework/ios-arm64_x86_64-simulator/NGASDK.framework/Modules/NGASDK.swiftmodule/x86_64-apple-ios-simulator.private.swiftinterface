@@ -398,6 +398,14 @@ extension Module___NGASDK.NGAErrorCode {
   @_spi(NGAInternal) func onSessionStart(_ sessionId: Swift.String)
   @_spi(NGAInternal) func onChildTreatment()
   @_spi(NGAInternal) func onForeground(_ inForeground: Swift.Bool)
+  @_spi(NGAInternal) func setBannerYield(_ bannerYield: (any Module___NGASDK.NGABannerYield)?)
+}
+@_spi(NGAInternal) extension Module___NGASDK.NGARenderModule {
+  @_spi(NGAInternal) public func setBannerYield(_ bannerYield: (any Module___NGASDK.NGABannerYield)?)
+}
+@_spi(NGAInternal) public protocol NGABannerYield : AnyObject {
+  @_spi(NGAInternal) func hide(_ done: @escaping (Swift.String?) -> Swift.Void)
+  @_spi(NGAInternal) func restore()
 }
 @_spi(NGAInternal) public protocol NGAHost : AnyObject {
   @_spi(NGAInternal) func session() -> Module___NGASDK.NGAHostSession
@@ -424,7 +432,8 @@ extension Module___NGASDK.NGAErrorCode {
   @_spi(NGAInternal) public let appKey: Swift.String
   @_spi(NGAInternal) public let sdkVersion: Swift.String
   @_spi(NGAInternal) public let testMode: Swift.Bool
-  @_spi(NGAInternal) public init(sessionId: Swift.String?, appKey: Swift.String, sdkVersion: Swift.String, testMode: Swift.Bool)
+  @_spi(NGAInternal) public let sdkBuild: Swift.String?
+  @_spi(NGAInternal) public init(sessionId: Swift.String?, appKey: Swift.String, sdkVersion: Swift.String, testMode: Swift.Bool, sdkBuild: Swift.String? = nil)
 }
 @_spi(NGAInternal) public struct NGAHostRequestContext {
   @_spi(NGAInternal) public let installId: Swift.String
@@ -469,6 +478,7 @@ extension Module___NGASDK.NGAErrorCode {
   }
   @objc public static func setMuted(_ muted: Swift.Bool)
   @objc public static func isMuted() -> Swift.Bool
+  @objc(setBannerYieldWithHide:restore:) public static func setBannerYield(hide: (() -> Swift.Void)?, restore: (() -> Swift.Void)?)
   @objc deinit
 }
 extension Module___NGASDK.NGASDK {
@@ -484,6 +494,7 @@ extension Module___NGASDK.NGASDK {
 @_spi(NGAInternal) public enum NGAUnityBridge {
   @_spi(NGAInternal) @discardableResult
   public static func logPurchase(jws: Swift.String?) -> Module___NGASDK.NGAResult
+  @_spi(NGAInternal) public static func setBannerYield(_ bannerYield: (any Module___NGASDK.NGABannerYield)?)
 }
 @_spi(NGAInternal) public protocol NGAClock {
   @_spi(NGAInternal) func nowMs() -> Swift.Int64

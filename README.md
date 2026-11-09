@@ -8,8 +8,8 @@ The two Unity packages of the NGA SDK, each in its folder as the release's tarba
 
 Add both by Git URL, at the same tag, in *Window > Package Manager > + > Add package from git URL…*:
 
-    https://github.com/nga-io/nga-sdk-unity.git?path=com.nga.sdk#v0.1.0-rc.1
-    https://github.com/nga-io/nga-sdk-unity.git?path=com.nga.sdk-render#v0.1.0-rc.1
+    https://github.com/nga-io/nga-sdk-unity.git?path=com.nga.sdk#v0.1.0-rc.2
+    https://github.com/nga-io/nga-sdk-unity.git?path=com.nga.sdk-render#v0.1.0-rc.2
 
 The packages need the External Dependency Manager for Unity (`com.google.external-dependency-manager`). Each
 release also carries the two packages as tarballs.

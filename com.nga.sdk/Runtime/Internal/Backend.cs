@@ -21,6 +21,9 @@ namespace NGA.Internal
         void SetMuted(bool muted);
         bool IsMuted();
 
+        /// <summary>The studio's pair, or null to clear it; already checked.</summary>
+        void SetBannerYield(BannerYield pair);
+
         NGAAdState State(NGAAd ad);
         bool IsReady(NGAAd ad);
         void Show(NGAAd ad, NGAAdShowListener listener);

@@ -67,5 +67,18 @@ namespace NGA
 
         /// <summary>Any thread; never blocks.</summary>
         public static bool IsMuted() => Backends.Current.IsMuted();
+
+        /// <summary>
+        /// The game's own banner ad yields to NGA's native cross-promo banner: <paramref name="hide"/> runs on the game thread
+        /// just before the banner is added, which waits for it at most a second, and <paramref name="restore"/> exactly once
+        /// after each hide: after the banner is removed, whatever ended the show, or at once when the hide threw or took
+        /// longer than a second, which refuses the show. Both are held until a later call replaces them; both null clears
+        /// them, one null alone is ignored with a warning. Any thread.
+        /// </summary>
+        public static void SetBannerYield(Action hide, Action restore)
+        {
+            var pair = BannerYield.Of(hide, restore, out var valid);
+            if (valid) Backends.Current.SetBannerYield(pair);
+        }
     }
 }

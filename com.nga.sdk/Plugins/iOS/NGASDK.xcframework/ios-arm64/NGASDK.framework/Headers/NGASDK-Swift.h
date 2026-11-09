@@ -718,6 +718,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable impres
 /// The only mute control: the initial state of the sound inside every NGA ad.
 + (void)setMuted:(BOOL)muted;
 + (BOOL)isMuted SWIFT_WARN_UNUSED_RESULT;
+/// The game’s own banner ad yields to NGA’s native cross-promo banner: <code>hide</code> runs on the main thread just before the
+/// banner is added, and <code>restore</code> exactly once after it is removed, whatever ended the show. Both are held strongly
+/// until a later call replaces them; both <code>nil</code> clears them, one <code>nil</code> alone is ignored.
++ (void)setBannerYieldWithHide:(void (^ _Nullable)(void))hide restore:(void (^ _Nullable)(void))restore;
 @end
 
 @interface NGASDK (SWIFT_EXTENSION(NGASDK))

@@ -100,6 +100,20 @@ namespace NGA.Internal
 
         public bool IsMuted() => Sdk.CallStatic<bool>("isMuted");
 
+        BannerYieldProxy bannerYieldProxy;
+
+        readonly object yieldGate = new object();
+
+        public void SetBannerYield(BannerYield pair)
+        {
+            // Any thread: the proxy kept and the one native holds are the same, whichever call comes last
+            lock (yieldGate)
+            {
+                bannerYieldProxy = pair == null ? null : new BannerYieldProxy(pair);
+                UnityBridge.CallStatic("setBannerYield", bannerYieldProxy);
+            }
+        }
+
         public NGAAdState State(NGAAd ad)
         {
             Jni.Attach();
@@ -126,6 +140,22 @@ namespace NGA.Internal
         }
 
         // --- the trampolines: copy, enqueue, return
+
+        /// <summary>Native asks for the pair it was given: each call only enqueues; the hide reports back once it ran.</summary>
+        [Preserve]
+        sealed class BannerYieldProxy : AndroidJavaProxy
+        {
+            readonly BannerYield pair;
+
+            public BannerYieldProxy(BannerYield pair) : base(Package + "NGAUnityBannerYield") => this.pair = pair;
+
+            [Preserve]
+            void hide(int token) => Jni.Guard("hide", () =>
+                pair.RunHide(threw => UnityBridge.CallStatic("bannerYieldHideRan", token, threw)));
+
+            [Preserve]
+            void restore() => Jni.Guard("restore", () => pair.RunRestore());
+        }
 
         [Preserve]
         sealed class ListenerProxy : AndroidJavaProxy

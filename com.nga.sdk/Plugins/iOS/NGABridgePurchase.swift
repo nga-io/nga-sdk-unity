@@ -1,5 +1,5 @@
 // C# `LogPurchase(jws)` on iOS: the SDK's public `logPurchase` takes a StoreKit `VerificationResult`, which no JWS
-// string makes, so this one call goes through the SDK's internal bridge for the C# layer. It is the shim's only SPI use, in a file of its own.
+// string makes, so this one call goes through the SDK's internal bridge for the C# layer. Like the banner yield's (NGABridgeBannerYield.swift), its SPI use is in a file of its own.
 
 import Foundation
 @_spi(NGAInternal) import NGASDK
