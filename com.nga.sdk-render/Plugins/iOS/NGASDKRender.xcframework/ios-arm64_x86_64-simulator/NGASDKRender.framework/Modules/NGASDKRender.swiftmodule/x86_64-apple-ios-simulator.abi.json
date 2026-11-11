@@ -606,98 +606,105 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "Array",
-      "offset": 11238,
+      "offset": 13094,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "BooleanLiteral",
-      "offset": 11268,
+      "offset": 13124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 11297,
+      "offset": 13153,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "BooleanLiteral",
-      "offset": 11326,
+      "offset": 13182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "BooleanLiteral",
-      "offset": 13069,
+      "offset": 14942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "BooleanLiteral",
-      "offset": 22478,
+      "offset": 24565,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24587,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 24508,
+      "offset": 26632,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 24641,
+      "offset": 26765,
       "length": 5,
       "value": "5000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "StringLiteral",
-      "offset": 24675,
+      "offset": 26799,
       "length": 5,
       "value": "\"nga\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 24794,
+      "offset": 26918,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 24836,
+      "offset": 26960,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 24879,
+      "offset": 27003,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "IntegerLiteral",
-      "offset": 24922,
+      "offset": 27046,
       "length": 6,
       "value": "15000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/AdShow.swift",
       "kind": "StringLiteral",
-      "offset": 24965,
+      "offset": 27089,
       "length": 17,
       "value": "\"unknown_command\""
     },
@@ -1362,70 +1369,70 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 10186,
+      "offset": 11267,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "StringLiteral",
-      "offset": 10217,
+      "offset": 11298,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "StringLiteral",
-      "offset": 10259,
+      "offset": 11340,
       "length": 14,
       "value": "\"backup_close\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "StringLiteral",
-      "offset": 10301,
+      "offset": 11382,
       "length": 6,
       "value": "\"back\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "StringLiteral",
-      "offset": 10343,
+      "offset": 11424,
       "length": 15,
       "value": "\"render_failed\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "StringLiteral",
-      "offset": 10391,
+      "offset": 11472,
       "length": 11,
       "value": "\"destroyed\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 11364,
+      "offset": 12445,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 11390,
+      "offset": 12471,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "BooleanLiteral",
-      "offset": 11415,
+      "offset": 12496,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreenRoute.swift",
       "kind": "IntegerLiteral",
-      "offset": 11444,
+      "offset": 12525,
       "length": 1,
       "value": "0"
     },
@@ -2580,84 +2587,119 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19161,
+      "offset": 11180,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11195,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20265,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21240,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19310,
+      "offset": 21389,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19345,
+      "offset": 21424,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19375,
+      "offset": 21454,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19408,
+      "offset": 21487,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19440,
+      "offset": 21519,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 19470,
+      "offset": 21549,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 19509,
+      "offset": 21588,
       "length": 11,
       "value": "\"view_gone\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 19558,
+      "offset": 21637,
       "length": 17,
       "value": "\"child_treatment\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 19613,
+      "offset": 21685,
+      "length": 9,
+      "value": "\"stopped\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 21730,
+      "length": 15,
+      "value": "\"render_failed\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
+      "kind": "StringLiteral",
+      "offset": 21783,
       "length": 18,
       "value": "\"window_too_small\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 19660,
+      "offset": 21830,
       "length": 6,
       "value": "\"band\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 22272,
+      "offset": 24442,
       "length": 5,
       "value": "false"
     },
@@ -2761,463 +2803,526 @@
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2970,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "Array",
-      "offset": 3205,
+      "offset": 3497,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "BooleanLiteral",
-      "offset": 3265,
+      "offset": 3557,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 3303,
+      "offset": 3595,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "BooleanLiteral",
-      "offset": 3447,
+      "offset": 3739,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "BooleanLiteral",
+      "offset": 40179,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "BooleanLiteral",
+      "offset": 62026,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "BooleanLiteral",
+      "offset": 62801,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 61651,
+      "offset": 68602,
       "length": 7,
       "value": "\"0.1.0\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 61683,
+      "offset": 68634,
       "length": 8,
       "value": "\"\/v1\/ad\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 61717,
+      "offset": 68668,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 61749,
+      "offset": 68700,
       "length": 8,
       "value": "\"native\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 61794,
+      "offset": 68745,
       "length": 14,
       "value": "\"interstitial\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 61841,
+      "offset": 68792,
       "length": 10,
       "value": "\"rewarded\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 61980,
+      "offset": 68931,
       "length": 6,
       "value": "60000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62022,
+      "offset": 68973,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62058,
+      "offset": 69009,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62098,
+      "offset": 69049,
       "length": 6,
       "value": "30000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62145,
+      "offset": 69096,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62150,
+      "offset": 69101,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62155,
+      "offset": 69106,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62160,
+      "offset": 69111,
       "length": 5,
       "value": "1000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62196,
+      "offset": 69147,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62235,
+      "offset": 69186,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62239,
+      "offset": 69190,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 62246,
+      "offset": 69197,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "Array",
-      "offset": 62291,
+      "offset": 69242,
       "length": 40,
       "value": "[1000, 5000, 30000, 120000, 600000]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62366,
+      "offset": 69317,
       "length": 23,
       "value": "\"^plc_[a-z0-9_]{3,64}$\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62415,
+      "offset": 69366,
       "length": 4,
       "value": "\"ad\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62453,
+      "offset": 69404,
       "length": 13,
       "value": "\"diagnostics\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62497,
+      "offset": 69448,
       "length": 12,
       "value": "\"ad_request\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62541,
+      "offset": 69492,
       "length": 13,
       "value": "\"ad_decision\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62584,
+      "offset": 69535,
       "length": 12,
       "value": "\"ad_no_fill\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62624,
+      "offset": 69575,
       "length": 9,
       "value": "\"ad_load\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62664,
+      "offset": 69615,
       "length": 12,
       "value": "\"ad_expired\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62705,
+      "offset": 69656,
       "length": 10,
       "value": "\"ad_error\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62749,
+      "offset": 69700,
       "length": 15,
       "value": "\"ad_impression\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62793,
+      "offset": 69744,
       "length": 10,
       "value": "\"ad_click\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62832,
+      "offset": 69783,
       "length": 10,
       "value": "\"ad_close\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62872,
+      "offset": 69823,
       "length": 11,
       "value": "\"ad_reward\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62918,
+      "offset": 69869,
       "length": 14,
       "value": "\"render_probe\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 62963,
+      "offset": 69914,
       "length": 6,
       "value": "\"load\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "IntegerLiteral",
+      "offset": 70068,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63003,
+      "offset": 70103,
       "length": 10,
       "value": "\"prefetch\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63049,
+      "offset": 70149,
       "length": 13,
       "value": "\"auto_reload\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63090,
+      "offset": 70190,
       "length": 6,
       "value": "\"load\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63124,
+      "offset": 70224,
       "length": 6,
       "value": "\"show\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63158,
+      "offset": 70258,
       "length": 5,
       "value": "\"ttl\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63200,
+      "offset": 70300,
       "length": 15,
       "value": "\"files_evicted\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63250,
+      "offset": 70350,
       "length": 12,
       "value": "\"superseded\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63422,
+      "offset": 70522,
       "length": 17,
       "value": "\"child_treatment\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63479,
+      "offset": 70571,
+      "length": 9,
+      "value": "\"stopped\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "StringLiteral",
+      "offset": 70620,
       "length": 18,
       "value": "\"no_fill.decision\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63531,
+      "offset": 70672,
       "length": 13,
       "value": "\"no_fill.cap\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63586,
+      "offset": 70727,
       "length": 21,
       "value": "\"no_fill.unsupported\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63649,
+      "offset": 70790,
       "length": 22,
       "value": "\"no_fill.rate_limited\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63709,
+      "offset": 70850,
       "length": 16,
       "value": "\"ad.unreachable\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63758,
+      "offset": 70899,
       "length": 11,
       "value": "\"ad.schema\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63803,
+      "offset": 70944,
       "length": 12,
       "value": "\"asset.hash\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63853,
+      "offset": 70994,
       "length": 16,
       "value": "\"asset.download\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63904,
+      "offset": 71045,
       "length": 13,
       "value": "\"cache.write\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 63956,
+      "offset": 71097,
       "length": 18,
       "value": "\"app_key.disabled\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 64009,
+      "offset": 71150,
       "length": 13,
       "value": "\"sdk.retired\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 64059,
+      "offset": 71200,
       "length": 21,
       "value": "\"show.state.consumed\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 64115,
+      "offset": 71256,
       "length": 19,
       "value": "\"show.state.failed\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 64170,
+      "offset": 71311,
       "length": 20,
       "value": "\"show.state.expired\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "BooleanLiteral",
-      "offset": 65069,
+      "offset": 72932,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 65355,
+      "offset": 73218,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "IntegerLiteral",
-      "offset": 65359,
+      "offset": 73222,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 65421,
+      "offset": 73284,
       "length": 7,
       "value": "\"0.0.0\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
       "kind": "StringLiteral",
-      "offset": 65437,
+      "offset": 73300,
       "length": 12,
       "value": "\"index.html\""
     },
     {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "StringLiteral",
+      "offset": 73883,
+      "length": 13,
+      "value": "\"render.main\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "StringLiteral",
+      "offset": 73925,
+      "length": 15,
+      "value": "\"render.banner\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/Render.swift",
+      "kind": "StringLiteral",
+      "offset": 73971,
+      "length": 18,
+      "value": "\"render.ad_screen\""
+    },
+    {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderModule.swift",
       "kind": "BooleanLiteral",
-      "offset": 4868,
+      "offset": 5949,
       "length": 5,
       "value": "false"
     },
@@ -3237,29 +3342,50 @@
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2317,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
+      "kind": "StringLiteral",
+      "offset": 2474,
+      "length": 9,
+      "value": "\"_schema\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 7058,
+      "offset": 2522,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8421,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 7063,
+      "offset": 8426,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 7068,
+      "offset": 8431,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/RenderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 7073,
+      "offset": 8436,
       "length": 5,
       "value": "1000"
     },
@@ -3385,7 +3511,7 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/FullScreen\/WebViewHost.swift",
       "kind": "Array",
-      "offset": 7420,
+      "offset": 8000,
       "length": 37,
       "value": "[\"index.html\", \"unit.js\", \"unit.css\"]"
     },

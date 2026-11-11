@@ -351,6 +351,9 @@ extension Module___NGASDK.NGAErrorCode {
     get
   }
 }
+@_spi(NGAInternal) public enum NGAGuard {
+  @_spi(NGAInternal) public static func run(_ block: () -> Swift.Void) -> Swift.String?
+}
 @_spi(NGAInternal) public protocol NGADebugTap : AnyObject {
   @_spi(NGAInternal) func onExchange(path: Swift.String, request: Swift.String?, status: Swift.Int, response: Swift.String?)
 }
@@ -390,6 +393,7 @@ extension Module___NGASDK.NGAErrorCode {
 }
 @_spi(NGAInternal) public protocol NGARenderModule : AnyObject {
   @_spi(NGAInternal) var sdkVersion: Swift.String { get }
+  @_spi(NGAInternal) var sdkBuild: Swift.String? { get }
   @_spi(NGAInternal) var hostApi: Swift.Int { get }
   @_spi(NGAInternal) func start(host: any Module___NGASDK.NGAHost, sessionId: Swift.String?, inForeground: Swift.Bool)
   @_spi(NGAInternal) func loadAd(_ placementId: Swift.String, callback: any Module___NGASDK.NGAAdLoadCallback)
@@ -399,9 +403,14 @@ extension Module___NGASDK.NGAErrorCode {
   @_spi(NGAInternal) func onChildTreatment()
   @_spi(NGAInternal) func onForeground(_ inForeground: Swift.Bool)
   @_spi(NGAInternal) func setBannerYield(_ bannerYield: (any Module___NGASDK.NGABannerYield)?)
+  @_spi(NGAInternal) func onStopped()
 }
 @_spi(NGAInternal) extension Module___NGASDK.NGARenderModule {
   @_spi(NGAInternal) public func setBannerYield(_ bannerYield: (any Module___NGASDK.NGABannerYield)?)
+  @_spi(NGAInternal) public var sdkBuild: Swift.String? {
+    @_spi(NGAInternal) get
+  }
+  @_spi(NGAInternal) public func onStopped()
 }
 @_spi(NGAInternal) public protocol NGABannerYield : AnyObject {
   @_spi(NGAInternal) func hide(_ done: @escaping (Swift.String?) -> Swift.Void)
@@ -426,6 +435,10 @@ extension Module___NGASDK.NGAErrorCode {
   @_spi(NGAInternal) func adClosedAfterRestart(placementId: Swift.String, opportunityId: Swift.String, rewardGranted: Swift.Bool)
   @_spi(NGAInternal) func post(_ callback: @escaping () -> Swift.Void)
   @_spi(NGAInternal) func recordFailure(_ site: Swift.String, _ what: Swift.String)
+  @_spi(NGAInternal) func newerFileSetAside()
+}
+@_spi(NGAInternal) extension Module___NGASDK.NGAHost {
+  @_spi(NGAInternal) public func newerFileSetAside()
 }
 @_spi(NGAInternal) public struct NGAHostSession {
   @_spi(NGAInternal) public let sessionId: Swift.String?
@@ -433,7 +446,8 @@ extension Module___NGASDK.NGAErrorCode {
   @_spi(NGAInternal) public let sdkVersion: Swift.String
   @_spi(NGAInternal) public let testMode: Swift.Bool
   @_spi(NGAInternal) public let sdkBuild: Swift.String?
-  @_spi(NGAInternal) public init(sessionId: Swift.String?, appKey: Swift.String, sdkVersion: Swift.String, testMode: Swift.Bool, sdkBuild: Swift.String? = nil)
+  @_spi(NGAInternal) public let stop: Swift.String?
+  @_spi(NGAInternal) public init(sessionId: Swift.String?, appKey: Swift.String, sdkVersion: Swift.String, testMode: Swift.Bool, sdkBuild: Swift.String? = nil, stop: Swift.String? = nil)
 }
 @_spi(NGAInternal) public struct NGAHostRequestContext {
   @_spi(NGAInternal) public let installId: Swift.String

@@ -10686,6 +10686,111 @@
         "moduleName": "NGASDK"
       },
       {
+        "kind": "Import",
+        "name": "NGASDKSystem",
+        "printedName": "NGASDKSystem",
+        "declKind": "Import",
+        "moduleName": "NGASDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NGAGuard",
+        "printedName": "NGAGuard",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "run",
+            "printedName": "run(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NGASDK8NGAGuardO3runySSSgyyXEFZ",
+            "mangledName": "$s6NGASDK8NGAGuardO3runySSSgyyXEFZ",
+            "moduleName": "NGASDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6NGASDK8NGAGuardO",
+        "mangledName": "$s6NGASDK8NGAGuardO",
+        "moduleName": "NGASDK",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "NGAInternal"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NGASDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "NGADebugTap",
         "printedName": "NGADebugTap",
@@ -11930,6 +12035,73 @@
           },
           {
             "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6NGASDK15NGARenderModuleP8sdkBuildSSSgvp",
+            "mangledName": "$s6NGASDK15NGARenderModuleP8sdkBuildSSSgvp",
+            "moduleName": "NGASDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NGASDK15NGARenderModuleP8sdkBuildSSSgvg",
+                "mangledName": "$s6NGASDK15NGARenderModuleP8sdkBuildSSSgvg",
+                "moduleName": "NGASDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGARenderModule>",
+                "sugared_genericSig": "<Self where Self : NGASDK.NGARenderModule>",
+                "protocolReq": true,
+                "spi_group_names": [
+                  "NGAInternal"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "hostApi",
             "printedName": "hostApi",
             "children": [
@@ -12281,6 +12453,33 @@
           },
           {
             "kind": "Function",
+            "name": "onStopped",
+            "printedName": "onStopped()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NGASDK15NGARenderModuleP9onStoppedyyF",
+            "mangledName": "$s6NGASDK15NGARenderModuleP9onStoppedyyF",
+            "moduleName": "NGASDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGARenderModule>",
+            "sugared_genericSig": "<Self where Self : NGASDK.NGARenderModule>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setBannerYield",
             "printedName": "setBannerYield(_:)",
             "children": [
@@ -12307,6 +12506,99 @@
             "declKind": "Func",
             "usr": "s:6NGASDK15NGARenderModulePAAE14setBannerYieldyyAA09NGABannerF0_pSgF",
             "mangledName": "$s6NGASDK15NGARenderModulePAAE14setBannerYieldyyAA09NGABannerF0_pSgF",
+            "moduleName": "NGASDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGARenderModule>",
+            "sugared_genericSig": "<Self where Self : NGASDK.NGARenderModule>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "sdkBuild",
+            "printedName": "sdkBuild",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6NGASDK15NGARenderModulePAAE8sdkBuildSSSgvp",
+            "mangledName": "$s6NGASDK15NGARenderModulePAAE8sdkBuildSSSgvp",
+            "moduleName": "NGASDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NGASDK15NGARenderModulePAAE8sdkBuildSSSgvg",
+                "mangledName": "$s6NGASDK15NGARenderModulePAAE8sdkBuildSSSgvg",
+                "moduleName": "NGASDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGARenderModule>",
+                "sugared_genericSig": "<Self where Self : NGASDK.NGARenderModule>",
+                "isFromExtension": true,
+                "spi_group_names": [
+                  "NGAInternal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "onStopped",
+            "printedName": "onStopped()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NGASDK15NGARenderModulePAAE9onStoppedyyF",
+            "mangledName": "$s6NGASDK15NGARenderModulePAAE9onStoppedyyF",
             "moduleName": "NGASDK",
             "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGARenderModule>",
             "sugared_genericSig": "<Self where Self : NGASDK.NGARenderModule>",
@@ -13120,6 +13412,59 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "newerFileSetAside",
+            "printedName": "newerFileSetAside()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NGASDK7NGAHostP17newerFileSetAsideyyF",
+            "mangledName": "$s6NGASDK7NGAHostP17newerFileSetAsideyyF",
+            "moduleName": "NGASDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGAHost>",
+            "sugared_genericSig": "<Self where Self : NGASDK.NGAHost>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "newerFileSetAside",
+            "printedName": "newerFileSetAside()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6NGASDK7NGAHostPAAE17newerFileSetAsideyyF",
+            "mangledName": "$s6NGASDK7NGAHostPAAE17newerFileSetAsideyyF",
+            "moduleName": "NGASDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : NGASDK.NGAHost>",
+            "sugared_genericSig": "<Self where Self : NGASDK.NGAHost>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -13442,9 +13787,76 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "stop",
+            "printedName": "stop",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6NGASDK14NGAHostSessionV4stopSSSgvp",
+            "mangledName": "$s6NGASDK14NGAHostSessionV4stopSSSgvp",
+            "moduleName": "NGASDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "NGAInternal"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6NGASDK14NGAHostSessionV4stopSSSgvg",
+                "mangledName": "$s6NGASDK14NGAHostSessionV4stopSSSgvg",
+                "moduleName": "NGASDK",
+                "implicit": true,
+                "spi_group_names": [
+                  "NGAInternal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:appKey:sdkVersion:testMode:sdkBuild:)",
+            "printedName": "init(sessionId:appKey:sdkVersion:testMode:sdkBuild:stop:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13498,11 +13910,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6NGASDK14NGAHostSessionV9sessionId6appKey10sdkVersion8testMode0H5BuildACSSSg_S2SSbAItcfc",
-            "mangledName": "$s6NGASDK14NGAHostSessionV9sessionId6appKey10sdkVersion8testMode0H5BuildACSSSg_S2SSbAItcfc",
+            "usr": "s:6NGASDK14NGAHostSessionV9sessionId6appKey10sdkVersion8testMode0H5Build4stopACSSSg_S2SSbA2Jtcfc",
+            "mangledName": "$s6NGASDK14NGAHostSessionV9sessionId6appKey10sdkVersion8testMode0H5Build4stopACSSSg_S2SSbA2Jtcfc",
             "moduleName": "NGASDK",
             "declAttributes": [
               "AccessControl"
@@ -16925,294 +17352,315 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 4084,
+      "offset": 4097,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "Array",
-      "offset": 4331,
+      "offset": 4344,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 4532,
+      "offset": 4545,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 4594,
+      "offset": 4607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 5130,
+      "offset": 5143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "Array",
-      "offset": 5244,
+      "offset": 5257,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 5445,
+      "offset": 5458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 5713,
+      "offset": 5726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 5751,
+      "offset": 5764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 5793,
+      "offset": 5806,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 6070,
+      "offset": 6083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 6234,
+      "offset": 6247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 6763,
+      "offset": 6776,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 6767,
+      "offset": 6780,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 27510,
+      "offset": 27856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "BooleanLiteral",
-      "offset": 37525,
+      "offset": 38052,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
+      "kind": "Array",
+      "offset": 73176,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
+      "kind": "IntegerLiteral",
+      "offset": 73302,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71445,
+      "offset": 75505,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
+      "kind": "Array",
+      "offset": 75622,
+      "length": 54,
+      "value": "[\"ad_impression\", \"ad_click\", \"ad_reward\", \"ad_close\"]"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71481,
+      "offset": 75707,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71526,
+      "offset": 75752,
       "length": 15,
       "value": "\"first_seen_at\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71574,
+      "offset": 75800,
       "length": 19,
       "value": "\"last_version_name\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71628,
+      "offset": 75854,
       "length": 17,
       "value": "\"last_updated_at\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71681,
+      "offset": 75907,
       "length": 18,
       "value": "\"customer_user_id\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71731,
+      "offset": 75957,
       "length": 13,
       "value": "\"static_hash\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71774,
+      "offset": 76000,
       "length": 11,
       "value": "\"batch_seq\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71817,
+      "offset": 76043,
       "length": 13,
       "value": "\"highest_seq\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71864,
+      "offset": 76090,
       "length": 16,
       "value": "\"pre_init_drops\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 71914,
+      "offset": 76140,
       "length": 20,
       "value": "\"identity_link_sent\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 72051,
+      "offset": 76277,
       "length": 23,
       "value": "\"consent_last_reported\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 72106,
+      "offset": 76332,
       "length": 10,
       "value": "\"pre_init\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 72149,
+      "offset": 76375,
       "length": 10,
       "value": "\"migrated\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "StringLiteral",
-      "offset": 72192,
+      "offset": 76418,
       "length": 16,
       "value": "\"event.oversize\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72234,
+      "offset": 76460,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72269,
+      "offset": 76495,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72303,
+      "offset": 76529,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72344,
+      "offset": 76570,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72381,
+      "offset": 76607,
       "length": 6,
       "value": "60000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72419,
+      "offset": 76645,
       "length": 9,
       "value": "3600000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72459,
+      "offset": 76685,
       "length": 10,
       "value": "86400000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72565,
+      "offset": 76791,
       "length": 2,
       "value": "75"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72570,
+      "offset": 76796,
       "length": 6,
       "value": "60000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72614,
+      "offset": 76840,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Core.swift",
       "kind": "IntegerLiteral",
-      "offset": 72658,
+      "offset": 76884,
       "length": 1,
       "value": "3"
     },
@@ -18934,147 +19382,154 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 15884,
+      "offset": 17080,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 15916,
+      "offset": 17112,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 15949,
+      "offset": 17145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 15985,
+      "offset": 17181,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "Dictionary",
-      "offset": 16025,
+      "offset": 17221,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "Array",
-      "offset": 16071,
+      "offset": 17267,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "BooleanLiteral",
-      "offset": 16125,
+      "offset": 17321,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19114,
+      "offset": 20709,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19148,
+      "offset": 20743,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19179,
+      "offset": 20774,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 19216,
+      "offset": 20811,
       "length": 15,
       "value": "\"queue_evicted\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 19276,
+      "offset": 20871,
       "length": 17,
       "value": "\"signal_snapshot\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "StringLiteral",
-      "offset": 19332,
+      "offset": 20927,
       "length": 10,
       "value": "\"purchase\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19478,
+      "offset": 21073,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19521,
+      "offset": 21116,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19528,
+      "offset": 21123,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19573,
+      "offset": 21168,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19626,
+      "offset": 21221,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19633,
+      "offset": 21228,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19669,
+      "offset": 21264,
       "length": 9,
       "value": "3600000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/EventQueue.swift",
       "kind": "IntegerLiteral",
-      "offset": 19709,
+      "offset": 21304,
       "length": 10,
       "value": "86400000"
     },
@@ -19767,23 +20222,58 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
       "kind": "Dictionary",
-      "offset": 857,
+      "offset": 1013,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 2656,
+      "offset": 1129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 2686,
+      "offset": 2930,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2960,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3003,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
+      "kind": "StringLiteral",
+      "offset": 3265,
+      "length": 9,
+      "value": "\"_schema\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3313,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Store\/KeyValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3395,
+      "length": 4,
+      "value": "1000"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Revenue\/LevelPlayHook.swift",
@@ -20740,42 +21230,42 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Platform.swift",
       "kind": "StringLiteral",
-      "offset": 12568,
+      "offset": 12857,
       "length": 17,
       "value": "\"network.nga.sdk\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Platform.swift",
       "kind": "Array",
-      "offset": 12755,
+      "offset": 13044,
       "length": 130,
       "value": "[\"install_id\", \"first_seen_ms\", \"session_count\", \"time_spent_ms\", \"last_version_name\", \"last_update_ms\", \"seq_num\"]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Platform.swift",
       "kind": "StringLiteral",
-      "offset": 13110,
+      "offset": 13399,
       "length": 17,
       "value": "\"network.nga.sdk\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Platform.swift",
       "kind": "StringLiteral",
-      "offset": 13164,
+      "offset": 13453,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Platform.swift",
       "kind": "StringLiteral",
-      "offset": 13414,
+      "offset": 13703,
       "length": 12,
       "value": "\"install_id\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Platform.swift",
       "kind": "BooleanLiteral",
-      "offset": 13997,
+      "offset": 14286,
       "length": 5,
       "value": "false"
     },
@@ -20873,14 +21363,14 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/QueueStore.swift",
       "kind": "Dictionary",
-      "offset": 5346,
+      "offset": 5602,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Queue\/QueueStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 5383,
+      "offset": 5639,
       "length": 1,
       "value": "0"
     },
@@ -20901,21 +21391,14 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/RenderBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 1148,
+      "offset": 1185,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/RenderBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 1260,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/RenderBridge.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1405,
+      "offset": 1297,
       "length": 5,
       "value": "false"
     },
@@ -20999,7 +21482,7 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Sdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 12363,
+      "offset": 12483,
       "length": 4,
       "value": "true"
     },
