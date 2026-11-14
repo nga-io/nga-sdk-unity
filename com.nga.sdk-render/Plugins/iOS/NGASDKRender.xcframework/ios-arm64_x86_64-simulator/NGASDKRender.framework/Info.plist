@@ -43,7 +43,7 @@
 	<key>MinimumOSVersion</key>
 	<string>15.0</string>
 	<key>NGASDKBuild</key>
-	<string>d98527be3c70</string>
+	<string>9fdb26579428</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
