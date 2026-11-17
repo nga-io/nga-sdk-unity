@@ -117,6 +117,14 @@ import Module___zlib
     @_spi(NGAInternal) get
   }
 }
+@_spi(NGAInternal) public enum NGAMainTasks {
+  @_spi(NGAInternal) @discardableResult
+  public static func setObserver(_ observer: ((Swift.StaticString, Swift.UInt64) -> Swift.Void)?) -> Swift.Bool
+  @_spi(NGAInternal) public static func async(_ site: Swift.StaticString, _ body: @escaping () -> Swift.Void)
+  @_spi(NGAInternal) public static func asyncAfter(_ site: Swift.StaticString, _ deadline: Dispatch.DispatchTime, _ body: @escaping () -> Swift.Void)
+  @_spi(NGAInternal) public static func run(_ site: Swift.StaticString, _ body: () -> Swift.Void)
+  @_spi(NGAInternal) public static func part(_ site: Swift.StaticString, _ body: () -> Swift.Void)
+}
 @objc public protocol NGAAd {
   @objc var placementId: Swift.String { get }
   @objc var opportunityId: Swift.String { get }
