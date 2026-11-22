@@ -21661,63 +21661,63 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 4986,
+      "offset": 6636,
       "length": 11,
       "value": "\"purchased\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 5028,
+      "offset": 6678,
       "length": 9,
       "value": "\"pending\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 5069,
+      "offset": 6719,
       "length": 10,
       "value": "\"refunded\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 5110,
+      "offset": 6760,
       "length": 9,
       "value": "\"expired\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 5154,
+      "offset": 6804,
       "length": 13,
       "value": "\"unspecified\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 5197,
+      "offset": 6847,
       "length": 23,
       "value": "\"purchase_transactions\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "StringLiteral",
-      "offset": 5252,
+      "offset": 6902,
       "length": 19,
       "value": "\"purchase_baseline\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 5311,
+      "offset": 6961,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/PurchaseTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 5316,
+      "offset": 6966,
       "length": 10,
       "value": "86400000"
     },
@@ -22714,6 +22714,13 @@
       "offset": 345,
       "length": 4,
       "value": "\"xl\""
+    },
+    {
+      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Purchases\/TransactionSource.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1179,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDK\/Internal\/Validation.swift",

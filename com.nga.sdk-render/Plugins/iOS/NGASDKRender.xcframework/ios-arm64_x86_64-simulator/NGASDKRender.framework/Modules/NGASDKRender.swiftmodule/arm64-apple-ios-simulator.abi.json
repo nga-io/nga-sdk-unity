@@ -2025,490 +2025,483 @@
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "Dictionary",
-      "offset": 6110,
+      "offset": 7089,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6263,
+      "offset": 7242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "Array",
-      "offset": 13418,
+      "offset": 15274,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "Array",
-      "offset": 13461,
+      "offset": 15317,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 13490,
+      "offset": 15346,
       "length": 6,
       "value": "\"band\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13574,
+      "offset": 15430,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 13647,
+      "offset": 15503,
       "length": 7,
       "value": "\"motif\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13758,
+      "offset": 15614,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 13798,
+      "offset": 15654,
       "length": 6,
       "value": "\"icon\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 13931,
+      "offset": 15787,
       "length": 9,
       "value": "\"chevron\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13997,
+      "offset": 15853,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 14030,
+      "offset": 15886,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14086,
+      "offset": 15942,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17180,
+      "offset": 19036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "Array",
-      "offset": 19786,
+      "offset": 21642,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30109,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 30147,
+      "offset": 31958,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 30189,
+      "offset": 32000,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 30234,
+      "offset": 32045,
       "length": 4,
       "value": "0.22"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 30277,
+      "offset": 32088,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 30320,
+      "offset": 32131,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 30360,
+      "offset": 32171,
       "length": 4,
       "value": "0.42"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 30391,
+      "offset": 32202,
       "length": 4,
       "value": "1.25"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30491,
+      "offset": 32302,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30541,
+      "offset": 32352,
       "length": 2,
       "value": "46"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30595,
+      "offset": 32406,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31234,
+      "offset": 33045,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31241,
+      "offset": 33052,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31248,
+      "offset": 33059,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31254,
+      "offset": 33065,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31259,
+      "offset": 33070,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31277,
+      "offset": 33088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31299,
+      "offset": 33110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31305,
+      "offset": 33116,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31322,
+      "offset": 33133,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31328,
+      "offset": 33139,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31347,
+      "offset": 33158,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31370,
+      "offset": 33181,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31376,
+      "offset": 33187,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31391,
+      "offset": 33202,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31397,
+      "offset": 33208,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31414,
+      "offset": 33225,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31437,
+      "offset": 33248,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31445,
+      "offset": 33256,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31460,
+      "offset": 33271,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31468,
+      "offset": 33279,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31485,
+      "offset": 33296,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31509,
+      "offset": 33320,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31515,
+      "offset": 33326,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31530,
+      "offset": 33341,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31536,
+      "offset": 33347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31553,
+      "offset": 33364,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31577,
+      "offset": 33388,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31583,
+      "offset": 33394,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31600,
+      "offset": 33411,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31606,
+      "offset": 33417,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31625,
+      "offset": 33436,
       "length": 3,
       "value": "225"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31649,
+      "offset": 33460,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31655,
+      "offset": 33466,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31670,
+      "offset": 33481,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31676,
+      "offset": 33487,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31693,
+      "offset": 33504,
       "length": 3,
       "value": "270"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31717,
+      "offset": 33528,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31725,
+      "offset": 33536,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 31740,
+      "offset": 33551,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31748,
+      "offset": 33559,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31788,
+      "offset": 33599,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31794,
+      "offset": 33605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31809,
+      "offset": 33620,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/tmp\/nga-sdk-at-source\/ios\/Sources\/NGASDKRender\/PromoBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 31815,
+      "offset": 33626,
       "length": 1,
       "value": "1"
     },
